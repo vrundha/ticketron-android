@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VenueTabFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1">
+    <TableLayout
+        android:id="@+id/details_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/venue_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/venue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/venue_addr_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/venue_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/venue_city_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:text="City" />
+
+            <TextView
+                android:id="@+id/venue_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip" />
+        </TableRow>
+
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/venue_ph_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:text="Phone Number" />
+
+            <TextView
+                android:id="@+id/venue_ph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/venue_hrs_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:text="Open Hours" />
+
+            <TextView
+                android:id="@+id/venue_hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/venue_gen_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:text="General Rule" />
+
+            <TextView
+                android:id="@+id/venue_gen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/venue_child_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:padding="5dip"
+                android:textStyle="bold"
+                android:text="Child Rule" />
+
+            <TextView
+                android:id="@+id/venue_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dip" />
+        </TableRow>
+<TableRow></TableRow>
+        <TableRow>
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="wrap_content"
+                android:layout_span="3"
+                android:layout_height="300dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center">
+
+        <TextView android:id="@+id/keyword_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keyword" />
+
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter Keyword" />
+
+
+        <TextView
+            android:id="@+id/category_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category" />
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/distance_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance" />
+
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="10"/>
+
+        <Spinner
+            android:id="@+id/unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From" />
+
+        <RadioGroup
+            android:id="@+id/location_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/current_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/custom_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other. Specify Location."
+                android:onClick="onRadioButtonClicked" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none"
+            android:hint="Type in the Location" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button android:id="@+id/search_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:onClick="performSearch"/>
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:text="Clear" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

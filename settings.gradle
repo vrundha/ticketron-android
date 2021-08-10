@@ -1,0 +1,3 @@
+rootProject.name = "EventSearch"
+include ':app'
+include ':volley_library'
